@@ -9,7 +9,7 @@ public class Teacher extends Person {
 		this.area = area;
 	}
 
-	public void getDetails(){
+	public void getDetails() {
 		System.out.println("Nombre completo: " + name + " " + surname + " " + "Área: " + area);
 	}
 }

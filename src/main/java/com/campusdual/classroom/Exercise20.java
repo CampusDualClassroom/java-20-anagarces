@@ -7,6 +7,7 @@ public class Exercise20 {
 
     //creamos una lista con elementos de tipo Person
     public static List<Person> getPeopleList() {
+
         List<Person> stringList = new ArrayList<>();
         stringList.add(new Person("John", "Smith"));
         stringList.add(new Teacher("Maria", "Montessori", "Educacion"));
@@ -18,16 +19,14 @@ public class Exercise20 {
 
     //recorremos la lista y mostramos los detalles
     public static void showPeopleDetails(List<Person> stringList) {
-            for(Person p: stringList){
-                p.getDetails();
-            }
+        for (Person p : stringList) {
+            p.getDetails();
+        }
     }
 
     public static void main(String[] args) {
-        List<Person> stringList = getPeopleList();
-        showPeopleDetails(stringList);
+        showPeopleDetails(getPeopleList()); //refactorizado
     }
-
 
 
 }
